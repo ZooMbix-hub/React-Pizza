@@ -1,0 +1,164 @@
+.pizza-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+
+.pizza-card-blockImg {
+  align-self: center;
+  img {
+    width: 259.12px;
+    height: 260px;
+  }
+}
+
+.pizza-card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.pizza-card-selector {
+  width: 100%;
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 19px 0;
+}
+
+.type,
+.size {
+  /*   background: #ffffff; */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+
+.type-active,
+.size-active {
+  background: #ffffff;
+}
+
+.selctor-type {
+  margin-bottom: 7px;
+}
+
+.selector-size {
+}
+
+.selctor-type,
+.selector-size {
+  display: flex;
+
+  button {
+    margin-right: 5px;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #2c2c2c;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:disabled {
+      color: #2c2c2c85;
+      box-shadow: none;
+    }
+  }
+}
+
+.pizza-block-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .pizza-block-price {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+    color: #000000;
+  }
+}
+
+.btn-addPizza-active,
+.btn-addPizza {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px solid #fe5f1e;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 10px 15px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fe5f1e;
+}
+
+.btn-addPizza-active {
+  transition: all .2s ease-in-out;
+  svg, path {
+    transition: all .2s ease-in-out;
+  }
+
+  .svg-plus-add {
+    margin-right: 7px;
+  }
+  &:hover {
+    background-color: #fe5f1e;
+    color: #FFFFFF;
+    .addPizza-count {
+      color: #fe5f1e;
+      background-color: #FFFFFF;
+    }
+    svg {
+      path {
+        fill: #FFFFFF;
+      }
+    }
+  }
+}
+
+.btn-addPizza {
+  transition: all .2s ease-in-out;
+  .svg-plus-add,
+  path {
+    transition: all .2s ease-in-out;
+  }
+
+  .svg-plus-add {
+    margin-right: 7px;
+  }
+
+  &:hover {
+    background: #fe5f1e;
+    color: #ffffff;
+    .svg-plus-add {
+      path {
+        fill: white;
+      }
+    }
+  }
+}
+
+.addPizza-count {
+  margin-left: 8px;
+  color: #ffffff;
+  background-color: #fe5f1e;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+}

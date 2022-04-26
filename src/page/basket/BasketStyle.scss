@@ -1,0 +1,178 @@
+.basket-wrapper {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backet-content {
+  display: flex;
+  flex-direction: column;
+  /* width: 800px; */
+
+  a {
+    button {
+      background: #282828;
+      border-radius: 30px;
+      padding: 13px 35px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.015em;
+      color: #ffffff;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        background: #3d3d3d;
+      }
+    }
+  }
+}
+
+.basket-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.basket-top-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+  img {
+    margin-right: 15px;
+  }
+}
+
+.btn-clear-basket {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B6B6B6;
+  background: none;
+  .svg-btn-clear-basket {
+    margin-right: 9.5px;
+  }
+  span,svg,path {
+    transition: all .2s ease-in-out;
+  }
+  &:hover {
+    color: #000000;
+    .svg-btn-clear-basket {
+      path {
+        stroke: #000000;
+      }
+    }
+  }
+
+}
+
+.basket-top-title,
+.btn-clear-basket {
+  display: flex;
+  align-items: center;
+}
+
+.basket-bottom-sum,
+.basket-bottom-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket-bottom-sum {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  margin-bottom: 40px;
+  
+  .sum-pizz {
+    span {
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+
+  .sum-price {
+    span {
+      font-weight: 700;
+      font-size: 24px;
+      color: #FE5F1E;
+    }
+  }
+}
+
+.basket-bottom-btn {
+  .btn-back,
+  .btn-pay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border-radius: 30px;
+    width: 210px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  } 
+
+  .btn-back {
+    border: 1px solid #D3D3D3;
+    color: #CACACA;
+    transition: all .2s ease-in-out;
+    svg, path {
+      transition: all .2s ease-in-out;
+    }
+
+    svg {
+      margin-right: 12px;
+      margin-top: 1px;
+    }
+
+    &:hover {
+      background-color: black;
+      color: #FFFFFF;
+      svg {
+        path {
+          stroke: #FFFFFF;
+        }
+      }
+    }
+  }
+  
+  .btn-pay {
+    background: #FE5F1E;
+    color: white;
+  }
+}
+
+.backet-content-clear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basket-content-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.basket-content-comment {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145.4%;
+  letter-spacing: 0.01em;
+  color: #777777;
+  text-align: center;
+  margin: 10px 0 40px;
+}
+
+@media (max-width: 864px) {
+
+}

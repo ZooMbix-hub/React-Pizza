@@ -1,0 +1,47 @@
+@mixin style-tag($bgColor, $fontColor) {
+  background: $bgColor;
+  border-radius: 30px;
+  padding: 15px 25px;
+  margin-right: 9px;
+
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: $fontColor;
+}
+
+.categories {
+  flex: 1 1;
+  max-width: 90%;
+  overflow: auto;
+}
+
+.categories-tags {
+  display: flex;
+}
+
+.tags-item {
+  @include style-tag(#f9f9f9, #2c2c2c);
+  transition: all .2s ease-in-out;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:hover {
+    background: #f0f0f0;
+  }
+}
+
+.tags-item-active {
+  @include style-tag(#282828, #ffffff);
+}
+
+@media (max-width: 550px) {
+  .categories {
+    flex: 1 1;
+    max-width: 100%;
+    overflow: visible;
+  }
+}
