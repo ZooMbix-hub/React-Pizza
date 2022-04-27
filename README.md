@@ -1,4 +1,4 @@
 Стек:
-• React + хуки
+• React-хуки
 • React-Router
 • SCSS
